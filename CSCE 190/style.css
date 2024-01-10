@@ -1,0 +1,48 @@
+body {
+    background:#16ECA0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.assignments{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.assignment{
+   width:22%;
+   padding:10px;
+   margin:20px;
+   padding:20px 10px;
+   background:#EC165D;
+   border-radius: 20px;
+} 
+.assignment img {
+    width:200px;
+    padding:10px;
+    border:5px solid #16ECC0 ;
+    display:block;
+    margin:auto;
+}
+
+.assignment img:hover {
+    border: 5px dashed blue;
+}
+
+
+
+h1{
+    text-align: center;
+    color :rgb(30, 116, 187)
+}
+h1:hover{
+    color:cornsilk
+}
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:#ECA816;
+}
+a:hover{
+    color:white;
+}
