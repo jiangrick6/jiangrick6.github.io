@@ -1,0 +1,77 @@
+/*Structure*/
+#main-header{
+     background:lightblue;
+     padding:3px;
+}
+#main-content{
+    width:90%;
+    margin:auto;
+    background:url(images/csce242background.jpg);
+    padding:5px
+}
+/*Typography*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:lightblue;
+}
+
+#main-header h1{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.assignment{
+    background: lightgreen;
+    margin:15px;
+    padding:5px;
+    border-radius:15px;
+}
+.assignment img{
+    max-width: 300px;
+    max-height:150px;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+p{
+    color:darkgreen
+}
+
+/*navigation*/
+.assignment a{
+    text-decoration: none;
+}
+
+.assignment:hover{
+    background: lightseagreen;
+}
+.assignment h3{
+    text-align: center;
+}
+
+
+p{
+    text-align: center;
+}
+#main-footer{
+    font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+    .one{
+        flex:1;
+    }
+    .assignment{
+        height: 80%;
+        width:80%;
+    }
+}
