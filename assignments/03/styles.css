@@ -103,7 +103,7 @@ ul {
         flex: 1;
     }
 
-    #small-ideas {
+    #big-idea {
         flex: 3;
     }
 
@@ -111,11 +111,11 @@ ul {
         display: flex;
     }
     
-    #small-ideas img {
+    #big-idea img {
         padding: 5px;
     }
 
-    .item {
+    .items {
         padding: 20px;
     }
 
