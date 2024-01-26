@@ -1,2 +1,110 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
 
 
+#topbar {
+    background-color:#000; /* Dark red background for the top bar */
+    color: white; /* White text color */
+    padding: 9px 0; /* Padding above and below the text */
+    
+  }
+  
+  #topbar h3 {
+    margin-right: auto; /* Space from the left edge */
+  }
+  
+  #topbar p {
+    margin: 0;
+    padding: 0 20px; /* Padding on the sides */
+  }
+  
+  #Topbar-nav {
+    display: flex; /* Use flexbox for the navigation links */
+    gap:5px; /* Space between the navigation links */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0;
+    /* Margin above and below the navigation */
+  }
+  
+  #Topbar-nav a {
+    color: white; /* White text color for links */
+    position: relative;
+    text-decoration: none; /* No underline for links */
+    padding: 5px; /* Padding around the link text */
+  }
+  
+  #topbar-nav a:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  
+  #header-main {
+    background-color: #000; /* Black background for the main header */
+    color: white; /* White text color */
+    text-align: center; /* Center align the elements */
+    padding: 20px 0; /* Padding above and below */
+  }
+  
+  #header-main img {
+    max-width:50px;
+    /* Adjust the logo size as needed */
+    position:sticky; /* Space below the logo */
+  }
+  
+  #header-main h1 {
+    margin:auto; /* Remove default margin */
+  }
+  
+  header-bottom h2 {
+    background-color:#73000a ; /* Darker red background for the secondary header */
+    color: white; /* White text color */
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Padding above and below */
+    text-align: left; /* Center align the text */
+  }
+
+/* Styles for the sidebar */
+#sidebar-content {
+    width: 250px; /* Width of the sidebar */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Padding inside the sidebar */
+    height: 100vh; /* Full height of the viewport */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    float: left; /* Float to the left of the body */
+  }
+  
+  #sidebar-content a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey color for text */
+    display: block; /* Display links as block elements */
+    Font-weight:bold;
+    margin-bottom: 10px; /* Margin below links */
+  }
+  
+  #sidebar-content a:hover {
+    color: #007bff; /* Change link color on hover */
+  }
+  
+  /* Styles for the main content */
+  #main-content {
+    margin-left: 270px; /* Make space for the sidebar */
+    padding: 20px; /* Padding inside the main content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  #main-content h3 {
+    color: #333; /* Dark grey color for headings */
+  }
+  
+  #main-content p {
+    line-height: 1.6; /* Space between lines */
+    color: #666; /* Light grey color for text */
+  }
+  
+  #main-content img {
+    max-width: 100%; /* Ensure the image is responsive and doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display as a block to fit width of the container */
+    margin-bottom: 20px; /* Margin below the image */
+  }
+}
