@@ -3,6 +3,9 @@
      background:lightblue;
      padding:3px;
 }
+
+
+
 #main-content{
     width:90%;
     margin:auto;
@@ -68,7 +71,7 @@ p{
         display: flex;
     }
     .one{
-        flex:1;
+        flex:30%;
     }
     .assignment{
         height: 80%;
