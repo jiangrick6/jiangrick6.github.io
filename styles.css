@@ -1,33 +1,40 @@
-/*Structure*/
-#main-header{
-     background:lightblue;
-     padding:3px;
+:root{
+
+    --main-background-color:#1F2833; 
+    --secondary-background-color:#45A29E;
+    --assignment-color:#66fCF1;
+    --text-color: #240090;
+    --border-color: white;
+    --highlight-color: #3500D3;
+    
+
 }
 
-
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:var(--main-background-color);
+}
+/*Structure*/
 
 #main-content{
-    width:90%;
+    width:80%;
     margin:auto;
-    background:url(images/csce242background.jpg);
-    padding:5px
-}
-/*Typography*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:lightblue;
-}
-
-#main-header h1{
-    text-align: center;
-    margin-top: 0px;
-}
-
-.assignment{
-    background: lightgreen;
-    margin:15px;
+    background:#45A29E ;
     padding:5px;
-    border-radius:15px;
+}
+#main-header{
+     background: #557a95; 
+     border-bottom: 4px solid var(--border-color);
+     padding:5px;
+}
+.assignment{
+    background: var(--assignment-color);
+    border-radius: 20px;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .assignment img{
     max-width: 300px;
@@ -35,23 +42,33 @@ body{
     display:block;
     margin-left:auto;
     margin-right: auto;
+   
 }
+.assignment a{
+    text-decoration: none;
+}
+.assignment:hover{
+    background:var(--highlight-color);
+}
+ 
+/*Typography*/
+
+#main-header h1{
+    text-align: center;
+    margin-top: 0px;
+}
+
+
 
 h1,
 h2,
 h3,
 p{
-    color:darkgreen
+    color:var(--text-color)
 }
 
 /*navigation*/
-.assignment a{
-    text-decoration: none;
-}
 
-.assignment:hover{
-    background: lightseagreen;
-}
 .assignment h3{
     text-align: center;
 }
@@ -69,12 +86,15 @@ p{
 @media only screen and (min-width: 768px) {
     .columns {
         display: flex;
+        flex-wrap:wrap;
     }
     .one{
-        flex:30%;
+        flex:50%;
     }
     .assignment{
-        height: 80%;
-        width:80%;
+        min-height: 300px;
+        max-height: 600px;
+        height: fit-content;
+        width: 400px;
     }
 }
