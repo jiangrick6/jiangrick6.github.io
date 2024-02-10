@@ -31,16 +31,6 @@ h2{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .nav-dropdown{
     display: inline-block;
 }
@@ -75,6 +65,15 @@ h2{
 .nav-dropdown a:hover{
     background-color: aqua;
 }
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
     .columns {

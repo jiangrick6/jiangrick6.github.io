@@ -1,0 +1,257 @@
+
+:root{
+
+--secondary-background-color:white;
+--section-color:#ffb533;
+--text-color: black;
+--border-color:grey;
+--highlight-color:lightblue ;
+
+}
+body{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image:url(images/Seattle.png) ;
+}
+
+#main-nav a{
+    text-decoration: none;
+    background-color:antiquewhite ;
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#main-nav a:hover{
+
+    color: aquamarine;
+}
+#main-nav{
+
+    background-color: aqua;
+    padding: 20px;
+}
+#main-header{
+    background: aqua; 
+    border-bottom: 4px solid var(--border-color);
+    padding:10px;
+}
+.section{
+    float:right;
+    margin: 0 1.5%;
+    width:50%;
+}
+#main-header h1{
+    text-align: center;
+    margin-top: 0px;
+    color: #50C878;
+}
+
+.form-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    display: block;
+}
+
+.small-button {
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 12px; /* Smaller font size */
+    color: blue;
+    border: 2px solid lightblue; /* Adjust border size as needed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    background-color: transparent;
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    margin: 0 5px; /* Optional: Adds space between buttons */
+}
+
+.small-button:hover {
+    background-color: #D70060; /* Color changes on hover */
+    color: #FFFFFF;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.deals-header h1 {
+    font-size: 3em; /* Adjust the size as needed */
+  }
+  
+  .deals-header p {
+    font-size: 1.2em; /* Adjust the size as needed */
+  }
+  
+  .deals-form {
+    margin-top: 20px;
+  }
+  
+  .deals-form input[type="text"],
+  
+  
+  .deals-form button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 2px solid #fff; /* White border */
+    background: greenyellow;
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .deals-form button:hover {
+    background: red;
+    color: #000;
+  }
+  
+ 
+  
+ 
+.nav-dropdown{
+    display:inline-block;
+}
+
+
+.nav-dropdown button{
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.nav-dropdown a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 50px;
+    box-shadow: 2px 2px 5px lightblue;
+}
+.nav-dropdown:hover .content{
+    display:block;
+
+}
+.nav-dropdown:hover .button{
+    background-color: lightblue ;
+
+}
+.nav-dropdown a:hover{
+    background-color: aqua;
+}
+
+/*Structure*/
+
+#main-content{
+    width:90%;
+    margin:auto;
+    background:var(--secondary-background-color) ;
+    padding:5px;
+}
+#main-content h2{
+    text-align: center;
+    
+}
+h1
+h2{
+    text-align: center;
+}
+.section a{
+    
+    text-decoration: none;
+}
+.section{
+    
+    border-style:solid;
+    border-color:blue;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    display: flex;
+   
+
+}
+
+.section img{
+
+    max-width: 200px;
+    max-height: 200px;
+
+}
+
+.section p{
+    text-decoration: none;
+}
+img{
+    
+    max-width: 500px;
+    max-height: 350px;
+    
+
+}
+.centerpic{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .deals-header h1 {
+      font-size: 2em;
+    }
+  
+    .deals-header p {
+      font-size: 1em;
+    }
+  
+    .deals-form input[type="text"],
+    .deals-form button {
+      padding: 5px;
+      font-size: 0.8em;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    
+    .section{
+        min-height: 300px;
+        max-height: 600px;
+        height: fit-content;
+        width: 400px;
+    }
+}
