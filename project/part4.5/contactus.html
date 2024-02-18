@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang ="eng">
+    
+<!--CSCE 242 Project part 4 Webpage Written by Rick Jiang -->
+ <head>
+    <title>Project Part 4-Pictures, text, and Colors</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+    <header id="main-header">
+        <h1>Seattle Washington</h1>
+      
+    <p>
+        <nav id="main-nav">
+    
+        <a href="index.html">Home</a>
+    
+        <a href="about.html">About</a>
+    
+        <div class="nav-dropdown">
+        <button>Things to do</button>
+        <div class="content">
+            <a href="attractions.html">Attractions</a>
+            <a href="sorecreations.html">Sport& Outdoor Recreations </a>
+            <a href="histhert.html">History & Hertiage</a>
+        </div>
+        </div>
+        <div class="nav-dropdown">
+        <button>Eat & Drink</button>
+        <div class="content">
+            <a href="affordrest.html">Afford Restaurant</a>
+            <a href="neigborhooddining.html">Neigborhood Dining </a>
+        </div>
+        </div>
+        <div class="nav-dropdown">
+        <button>Events</button>
+        <div class="content">
+            <a href="familyevents.html">Family Events</a>
+            <a href="thingstodoweek.html">Things to do this week </a>
+        </div>
+        </div>
+        <div class="nav-dropdown">
+        <button>Plan Your Visit</button>
+        <div class="content">
+            <a href="faqs.html">FAQS</a>
+            <a href="contactus.html">Contact us </a>
+            <a href="travelplans.html">Travel Plans</a>
+        </div>
+    </div>
+   
+    </nav>
+</header>
+<body>
+    <main id="main-content">
+        <h1>Contact Us</h1>
+        <p>If you're looking for information for Seattle Travel Guide please contact us if you need help.</p>
+        <div class="form-section">
+            <h2>General Information</h2>
+            <form>
+                <label for="subject">Contact Us - Subject*:</label>
+                <select id="subject" name="subject">
+                    <option value="">--None--</option>
+                    <option value="guide">Official Guide</option>
+                    <option value="membership">Member Information</option>
+                    <!-- Add more options here -->
+                </select>
+
+                <label for="firstName">First Name*:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name*:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="Address">Address*:</label>
+                <input type="text" id="Address" name="address" required>
+
+                <label for="ZipCode">ZipCode*:</label>
+                <input type="text" id="ZipCode" name="ZipCode" required>
+                
+                <label for="City">City*:</label>
+                <input type="text" id="city" name="City" required>
+                
+                <label for="state">State*:</label>
+                <input type="text" id="State" name="state" required>
+
+                <label for="Country">Country*:</label>
+                <input type="text" id="Country" name="Country" required>
+
+                <label for="Phone">State*:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="Email">email*:</label>
+                <input type="text" id="email" name="email"required>
+
+                <label for="Comments">Comments/Requests*:</label>
+                <input type="text" id="Comments" name="Comments" required>
+                <!-- Add more input fields as needed -->
+                
+                <div class="buttons">
+                    <input type="submit" value="Submit" class="small-button"/>
+                    <input type="reset" value="Reset" class="small-button"/>
+                </div>
+            
+            </form>
+           
+        </div>
+    </div>
+</body>
+</html>
