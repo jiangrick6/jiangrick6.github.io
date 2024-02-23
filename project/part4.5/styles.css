@@ -24,40 +24,49 @@ html {
 .parallax {
     height: 100%;
     opacity: 0.65;
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* So we can center content inside */
+ 
 }
 
 .home {
-    background-image: url("images/jasp-tree.jpg");
+    background-image: url("images/Seattle.png");
 }
 
 .face {
-    background-image: url("images/jasp-house.jpg");
+    background-image: url("images/seattle6.jpg");
 }
 
 .leash {
-    background-image: url("images/jasp-leash.jpg");
+    background-image: url("images/seattl7.jpg");
 }
 
 .info-section {
-    background-color: #595a5c;
-    font-size: 36px;
-    padding: 1%;
+    background-color: #74c23d;
+    text-align: center;
+    font-size: 24px;
+    padding: 1.5%;
     color: white;
 }
+.info-section a{
+
+    text-decoration: none;
+}
+
 
 .info-section section {
     padding: 0 10px;
     margin: 0 10px;
 }
+.info-section h3{
+    text-align: center;
+}
 
 img {
+    margin:auto;
     max-width: 90%;
     max-height: 90%;
 }
@@ -76,7 +85,7 @@ img {
 
 #main-menu {
     z-index: 1;
-    background-color: #595a5c;
+    background-color:#15387e ;
     position: fixed;
     top: 0;
     width: 100%;
@@ -268,24 +277,24 @@ input[type="text"] {
 
 
 .nav-dropdown button{
-    background-color: antiquewhite;
-    color: black;
+    background-color:#15387e ;
+    color: white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
     border-radius: 6px;
 }
 .nav-dropdown a{
     display: block;
-    color:black;
+    color:#595a5c;
     text-decoration: none;
     padding: 10px;
 }
 .nav-dropdown .content{
     display: none;
     position: absolute;
-    background-color: antiquewhite;
+    background-color:#595a5c;
     min-width: 50px;
     box-shadow: 2px 2px 5px lightblue;
 }

@@ -34,7 +34,7 @@ const moveBall = (e) => {
     if (e.target.innerHTML == "start") {
         e.target.innerHTML = "stop";
         startBall = setInterval(()=>{
-            if (ballPosition == 725) {
+            if (ballPosition == 750) {
                 direction = false;
             }
             if (ballPosition == 0) {
