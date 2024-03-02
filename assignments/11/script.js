@@ -20,15 +20,29 @@ class Card {
 
     getExpandedSection() {
         const section = document.createElement("section");
-
-        section.append();
+        section.className = "card-details";
+        section.innerHTML = `
+            <h3>${this.team}</h3>
+            <img src="images/${this.file}" alt="${this.team}">
+            <p>Description: ${this.description}</p>
+            <p>Record: ${this.record}</p>
+            <p>Key Players: ${this.keyplayers}</p>
+            <p>Rank: ${this.rank}</p>
+        `;
         return section;
-    };
+    }
 
-    expandOrClose(e) {
-        
-    };
-};
+    expandOrClose(e, summarySection) {
+        if (!this.expanded) {
+            const expandedSection = this.getExpandedSection();
+            summarySection.after(expandedSection);
+            this.expanded = true;
+        } else {
+            summarySection.nextElementSibling.remove();
+            this.expanded = false;
+        }
+    }
+}
 
 const cards = [];
 cards.push(new Card("sanfran.png","San Francisco 49ers","Overpaid and Elite Team","12-5","Brock Prody and Nick Bosa","1"));
