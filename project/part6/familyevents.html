@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<!--CSCE 242 Project part 6 -->
+
+<head>
+  <title>Project Part 6</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      color: black;
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      /* width: 100%; */
+      margin-top: 4em;
+      table-layout: fixed;
+    }
+
+    table caption {
+      font-size: 1.5em;
+      color: white;
+      font-weight: bold;
+      margin: .5em 0 .75em;
+    }
+
+    table tr {
+      background-color: #f8f8f8b6;
+      border: 1px solid #ddd;
+      padding: .35em;
+    }
+
+    table th,
+    table td {
+      padding: .625em;
+      text-align: center;
+    }
+
+    table th {
+      font-size: .85em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        border: 0;
+        width: 100%;
+      }
+
+      table caption {
+        font-size: 1.3em;
+      }
+
+      table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+      }
+
+      table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+      }
+
+      table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      table td:last-child {
+        border-bottom: 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav id="main-menu">
+    <ul>
+      <div class="nav-dropdown display-block-responsive">
+        <button class="home-btn"><a href="index.html">Home</a></button>
+      </div>
+
+      <div class="nav-dropdown">
+        <button>Things to do</button>
+        <div class="content">
+          <a href="attractions.html">Attractions</a>
+          <a href="sorecreations.html">Sport& Outdoor Recreations </a>
+          <a href="histhert.html">History & Hertiage</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button>Eat & Drink</button>
+        <div class="content">
+          <a href="affordrest.html">Afford Restaurant</a>
+          <a href="neigborhooddining.html">Neigborhood Dining </a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button>Events</button>
+        <div class="content">
+          <a href="familyevents.html">Family Events</a>
+          <a href="thingstodoweek.html">Things to do this week </a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button>Plan Your Visit</button>
+        <div class="content">
+          <a href="faqs.html">FAQS</a>
+          <a href="contactus.html">Contact us </a>
+          <a href="travelplans.html">Travel Plans</a>
+        </div>
+
+      </div>
+      <div class="drop">
+        <img src="/images/burger-menu-right-svgrepo-com.svg" alt="">
+        <div class="dropdown-mobile">
+          <a href="attractions.html">Attractions</a>
+          <a href="sorecreations.html">Sport& Outdoor Recreations </a>
+          <a href="histhert.html">History & Hertiage</a>
+          <a href="affordrest.html">Afford Restaurant</a>
+          <a href="neigborhooddining.html">Neigborhood Dining </a>
+          <a href="familyevents.html">Family Events</a>
+          <a href="thingstodoweek.html">Things to do this week </a>
+          <a href="faqs.html">FAQS</a>
+          <a href="contactus.html">Contact us </a>
+          <a href="travelplans.html">Travel Plans</a>
+        </div>
+      </div>
+
+    </ul>
+  </nav>
+  <div class="spacer"></div>
+  <main id="main-content" class="family-events ">
+    <div class="attraction-html "></div>
+    <h2>Family Events</h2>
+
+
+
+    <div class="layout ">
+      <h3>Create Family Events</h3>
+
+      <form class="deals-form" id="event-form">
+        <input type="text" id="eventName" placeholder="Event Name" required />
+        <input type="datetime" id="eventDate" placeholder="Event Date" required />
+        <input type="text" id="organizerName" placeholder="Organizer Name" required />
+        <input type="email" id="organizerEmail" placeholder="Organizer Email" required />
+
+        <div>
+          <button type="submit">Create</button>
+        </div>
+      </form>
+
+
+      <div class="event-details">
+        <!-- <table id="event-table">
+            <caption>Upcoming Events</caption>
+            <thead>
+              <tr>
+                <th scope="col">Event Name</th>
+                <th scope="col">Event Date</th>
+                <th scope="col">Manager Name</th>
+                <th scope="col">Manager Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="event">Family Picnic</td>
+                <td data-label="Date">2024-05-01</td>
+                <td data-label="organizer">John Doe</td>
+                <td data-label="organizer email">jhondoe@gmail.com</td>
+              </tr>
+
+            </tbody>
+          </table> -->
+      </div>
+
+
+
+  </main>
+  <footer>
+    @Copyright 2024 || SeaHawk
+  </footer>
+  <script>
+    document.getElementById("event-form").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Get form values
+      var eventName = document.getElementById("eventName").value;
+      var eventDate = document.getElementById("eventDate").value;
+      var organizerName = document.getElementById("organizerName").value;
+      var organizerEmail = document.getElementById("organizerEmail").value;
+
+      // Simple form validation
+      if (!eventName || !eventDate || !organizerName || !organizerEmail) {
+        alert("Please fill in all fields");
+        return;
+      }
+
+      // Check if table exists
+      var eventTable = document.getElementById("event-table");
+      if (!eventTable) {
+        // Create table if it doesn't exist
+        eventTable = document.createElement("table");
+        eventTable.id = "event-table";
+
+        // Table caption
+        var caption = document.createElement("caption");
+        caption.textContent = "Upcoming Events";
+        eventTable.appendChild(caption);
+
+        // Table header
+        var thead = document.createElement("thead");
+        thead.innerHTML = `
+          <tr>
+            <th scope="col">Event Name</th>
+            <th scope="col">Event Date</th>
+            <th scope="col">Manager Name</th>
+            <th scope="col">Manager Email</th>
+          </tr>
+        `;
+        eventTable.appendChild(thead);
+
+        // Table body
+        var tbody = document.createElement("tbody");
+        eventTable.appendChild(tbody);
+
+        // Append table to event details container
+        var eventDetails = document.querySelector(".event-details");
+        eventDetails.appendChild(eventTable);
+      }
+
+      // Create new table row
+      var newRow = document.createElement("tr");
+      newRow.innerHTML = `
+        <td data-label="event">${eventName}</td>
+        <td data-label="Date">${eventDate}</td>
+        <td data-label="organizer">${organizerName}</td>
+        <td data-label="organizer email">${organizerEmail}</td>
+      `;
+
+      // Append new row to table body
+      eventTable.querySelector("tbody").appendChild(newRow);
+
+      // Reset form
+      document.getElementById("event-form").reset();
+    });
+  </script>
+
+
+</body>
+
+</html>
