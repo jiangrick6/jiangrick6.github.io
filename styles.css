@@ -1,0 +1,80 @@
+/* Global Reset and Body Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2e7d64, #184e3e);
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header Style */
+header {
+    background: transparent;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Section Styling */
+main section {
+    background-color: #ffffff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    color: #1a1a1a;
+}
+
+/* Section Titles */
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Iframe (Video) Styling */
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0.5rem;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+/* Links */
+a {
+    color: #2e7d64;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
