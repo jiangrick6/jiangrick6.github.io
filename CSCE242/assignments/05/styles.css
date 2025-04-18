@@ -1,0 +1,312 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+#topbar {
+    background-color:#000; /* Dark red background for the top bar */
+    color: white; /* White text color */
+    padding: 9px 0; /* Padding above and below the text */
+    
+  }
+  
+  #topbar h3 {
+    margin-right: auto; /* Space from the left edge */
+  }
+  
+  #topbar p {
+    margin: 0;
+    padding: 0 20px; /* Padding on the sides */
+  }
+  
+  #Topbar-nav {
+    display: flex; /* Use flexbox for the navigation links */
+    gap:5px; 
+    list-style: none; /* Remove default list styling */
+    padding: 0; 
+    margin: 10px 0;
+    
+  }
+  
+  #Topbar-nav a {
+    color: white; /* White text color for links */
+    position: relative;
+    text-decoration: none; /* No underline for links */
+    padding: 5px; /* Padding around the link text */
+  }
+  
+  #topbar-nav a:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  
+  #header-main {
+    background-color: #000; /* Black background for the main header */
+    color: white; /* White text color */
+    text-align: center; /* Center align the elements */
+    padding: 20px 0; /* Padding above and below */
+  }
+  
+  #header-main img {
+    max-width:50px;
+    /* Adjust the logo size as needed */
+    position:sticky; /* Space below the logo */
+  }
+  
+  #header-main h1 {
+    margin:auto; /* Remove default margin */
+  }
+  
+  header-bottom h2 {
+    background-color:#73000a ; /* Darker red background for the secondary header */
+    color: white; /* White text color */
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Padding above and below */
+    text-align: left; /* Center align the text */
+  }
+
+/* Styles for the sidebar */
+#sidebar-content {
+    width: 250px; /* Width of the sidebar */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Padding inside the sidebar */
+    height: 100vh; /* Full height of the viewport */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    float: left; /* Float to the left of the body */
+  }
+  
+  #sidebar-content a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey color for text */
+    display: block; /* Display links as block elements */
+    Font-weight:bold;
+    margin-bottom: 10px; /* Margin below links */
+  }
+  
+  #sidebar-content a:hover {
+    color: #007bff; /* Change link color on hover */
+  }
+  
+  /* Styles for the main content */
+  #main-content {
+    margin-left: 270px; /* Make space for the sidebar */
+    padding: 20px; /* Padding inside the main content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  #main-content h3 {
+    color: #333; /* Dark grey color for headings */
+  }
+  
+  #main-content p {
+    line-height: 1.6; /* Space between lines */
+    color: #666; /* Light grey color for text */
+  }
+  
+  #main-content img {
+    max-width: 100%; /* Ensure the image is responsive and doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display as a block to fit width of the container */
+    margin-bottom: 20px; /* Margin below the image */
+  }
+  body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main content and sidebar container styles */
+  #sub-content,
+  #info-boxes {
+    box-sizing: border-box;
+  }
+  
+  /* Main content styles */
+  #sub-content {
+    width: calc(100% - 300px); /* Assuming the sidebar is 300px wide */
+    float: left; /* Float the main content to the left */
+    padding: 20px;
+  }
+  
+  .article {
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px; 
+    margin-bottom: 20px; 
+  }
+  
+  .article img {
+    float: left; 
+    margin-right: 20px; 
+    width: 150px; 
+    height: auto; 
+  }
+  
+  .article h4 {
+    margin-bottom: 10px;
+    ; 
+  }
+  
+  .article p {
+   text-decoration: none;;
+    text-align: justify; 
+  }
+  
+  /* Info boxes sidebar styles */
+  #info-boxes {
+    width: 300px; 
+    float: right; 
+    padding: 20px;
+    background-color: #f8f8f8; 
+  }
+  
+  .info-box {
+    margin-bottom: 20px; /* Add space between info boxes */
+  }
+  
+  .info-box h5 {
+    color: #0056b3; /* Blue color for info box titles */
+    margin-bottom: 5px; /* Space below the title */
+  }
+  
+  .info-box h3,
+  .info-box h1 {
+    color: #000; /* Black color for text */
+    margin-bottom: 5px; /* Space below the text */
+  }
+  
+  .info-box p {
+    font-size: 0.9em; /* Smaller font size for paragraph text */
+    color: #666; /* Dark grey color for text */
+  }
+  
+  /* Clearfix to contain floats */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+ 
+ 
+ 
+  /* Footer General Styles */
+footer {
+  font-family: Arial, sans-serif;
+  background-color: #900; 
+  color: white;
+  padding: 20px 0;
+}
+
+/* Footer Top Section */
+#footer-top {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#footer-top h2 {
+  margin-bottom: 10px;
+}
+
+#footer-top nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#footer-top nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#footer-top nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer Middle Section */
+#footer-middle {
+  border-top: 1px solid #aaa; 
+  border-bottom: 1px solid #aaa;
+  padding: 20px 0;
+}
+
+#footer-middle #footer-title h3,
+#footer-middle #social-links a {
+  display: inline-block;
+}
+
+#footer-middle #social-links {
+  float: right;
+  margin-right: 20px;
+}
+
+#footer-middle #social-links a {
+  margin-left: 10px;
+}
+
+/* Social Media Icons */
+#social-links a {
+  background: url('path_to_your_icons.png') no-repeat center center;
+  display: inline-block;
+  width: 24px; /* Icon size */
+  height: 24px; /* Icon size */
+  text-indent: -9999px; /* Hide text */
+  overflow: hidden;
+}
+
+/* Adjust these background-position values based on your sprite sheet */
+#social-links a.facebook { background-position: 0 0; }
+#social-links a.instagram { background-position: -24px 0; }
+#social-links a.twitter { background-position: -48px 0; }
+
+/* Footer Links Section */
+#footer-links .footer-list {
+  float: left;
+  width: 20%; /* Adjust width based on the number of columns */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#footer-links .footer-list h3 {
+  margin-bottom: 10px;
+}
+
+#footer-links .footer-list nav ul {
+  list-style-type: none;
+}
+
+#footer-links .footer-list nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#footer-links .footer-list nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom Section */
+#footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#footer-bottom nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#footer-bottom nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#footer-bottom nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Clear floats */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+}
